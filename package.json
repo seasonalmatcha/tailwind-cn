@@ -1,6 +1,6 @@
 {
   "name": "tailwind-cn",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Wrapper to combine tailwind classes",
   "private": false,
   "main": "./dist/index.js",
