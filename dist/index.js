@@ -20,13 +20,17 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 // src/index.ts
 var src_exports = {};
 __export(src_exports, {
-  hello: () => hello
+  cn: () => cn
 });
 module.exports = __toCommonJS(src_exports);
-function hello() {
-  return "Hello world!";
+
+// src/cn.ts
+var import_clsx = require("clsx");
+var import_tailwind_merge = require("tailwind-merge");
+function cn(...inputs) {
+  return (0, import_tailwind_merge.twMerge)((0, import_clsx.clsx)(...inputs));
 }
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
-  hello
+  cn
 });

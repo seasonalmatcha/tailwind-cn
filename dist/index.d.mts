@@ -1,3 +1,5 @@
-declare function hello(): string;
+import { ClassValue } from 'clsx';
 
-export { hello };
+declare function cn(...inputs: ClassValue[]): string;
+
+export { cn };

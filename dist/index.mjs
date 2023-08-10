@@ -1,7 +1,9 @@
-// src/index.ts
-function hello() {
-  return "Hello world!";
+// src/cn.ts
+import { clsx } from "clsx";
+import { twMerge } from "tailwind-merge";
+function cn(...inputs) {
+  return twMerge(clsx(...inputs));
 }
 export {
-  hello
+  cn
 };

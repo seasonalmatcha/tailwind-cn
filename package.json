@@ -25,8 +25,14 @@
   "devDependencies": {
     "@changesets/cli": "^2.26.2",
     "@types/node": "^20.4.9",
+    "clsx": "^2.0.0",
+    "tailwind-merge": "^1.14.0",
     "tsup": "^7.2.0",
     "typescript": "^5.1.6",
     "vitest": "^0.34.1"
+  },
+  "peerDependencies": {
+    "clsx": "^2",
+    "tailwind-merge": "^1"
   }
 }
