@@ -1,0 +1,32 @@
+{
+  "name": "tailwind-cn",
+  "version": "0.0.1",
+  "description": "Wrapper to combine tailwind classes",
+  "private": false,
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "ci": "pnpm run lint && pnpm run test && pnpm run build",
+    "dev": "vitest",
+    "lint": "tsc",
+    "release": "pnpm run lint && pnpm run test && pnpm run build && changeset publish",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "tailwindcss",
+    "clsx",
+    "tailwind-merge",
+    "css"
+  ],
+  "author": "Alan H (me@alanh.dev)",
+  "license": "MIT",
+  "devDependencies": {
+    "@changesets/cli": "^2.26.2",
+    "@types/node": "^20.4.9",
+    "tsup": "^7.2.0",
+    "typescript": "^5.1.6",
+    "vitest": "^0.34.1"
+  }
+}
