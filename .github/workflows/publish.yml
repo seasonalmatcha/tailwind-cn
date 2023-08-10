@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: 16.x
           cache: 'pnpm'
-      - run: npm install --frozen-lockfile
+      - run: pnpm install --frozen-lockfile
       - name: Create Release Pull or Publish
         id: changesets
         uses: changesets/action@v1

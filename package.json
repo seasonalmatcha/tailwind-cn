@@ -1,7 +1,7 @@
 {
   "name": "tailwind-cn",
-  "version": "0.0.1",
-  "description": "Wrapper to merge tailwind classes on top of twMerge and clsx",
+  "version": "1.0.0",
+  "description": "Wrapper to combine tailwind classes",
   "private": false,
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
