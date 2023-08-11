@@ -1,5 +1,13 @@
 # tailwind-cn
 
+## 1.0.2
+
+### Patch Changes
+
+- e63b714: Docs
+
+  - update readme
+
 ## 1.0.1
 
 ### Patch Changes
