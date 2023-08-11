@@ -1,12 +1,36 @@
 # Tailwind CN
 
-A wrapper around `tailwind-merge` and `clsx`
-
-This utility function helps you to merge tailwind classes and override classes in the same category
+A utility function built on top of [tailwind-merge](https://www.npmjs.com/package/tailwind-merge) and [clsx](https://www.npmjs.com/package/clsx) to help you merge and override tailwind classes in the same category
 
 Support string, object, array, and conditional syntax
 
+## Installation
+
+```bash
+npm install tailwind-cn tailwind-merge clsx
+```
+
 ## Usage
+
+The API is exactly the same as `clsx`
+
+```ts
+import { cn } from 'tailwind-cn';
+
+cn('text-white', true && 'text-blue');
+// => 'text-blue'
+
+cn(['p-4', undefined, 'text-black'], ['text-white']);
+// => 'p-4 text-white'
+
+cn({ 'bg-black': true, 'text-white': false });
+// => 'bg-black
+
+cn({ border: true }, 'border-0', ['border-b']);
+// => 'border-0 border-b'
+
+// Feel free to experiments :)
+```
 
 ```tsx
 import type { ComponentProps } from 'react';
