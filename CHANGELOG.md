@@ -1,5 +1,11 @@
 # tailwind-cn
 
+## 1.0.3
+
+### Patch Changes
+
+- Update dependencies, change bundler to tsdown
+
 ## 1.0.2
 
 ### Patch Changes
