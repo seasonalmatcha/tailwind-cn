@@ -7,7 +7,7 @@ Support string, object, array, and conditional syntax
 ## Installation
 
 ```bash
-npm install tailwind-cn tailwind-merge clsx
+npm install tailwind-cn
 ```
 
 ## Usage

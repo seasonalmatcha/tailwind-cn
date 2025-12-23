@@ -3,24 +3,18 @@
   "version": "1.0.2",
   "description": "Wrapper to combine tailwind classes",
   "private": false,
-  "main": "./dist/index.js",
+  "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
+  "types": "./dist/index.d.mts",
   "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "build": "tsdown src/index.ts --format cjs,esm --dts",
     "ci": "pnpm run lint && pnpm run test && pnpm run build",
     "dev": "vitest",
     "lint": "tsc",
     "release": "pnpm run lint && pnpm run test && pnpm run build && changeset publish",
     "test": "vitest run"
   },
-  "keywords": [
-    "tailwindcss",
-    "clsx",
-    "tailwind-merge",
-    "css",
-    "classnames"
-  ],
+  "keywords": ["tailwindcss", "clsx", "tailwind-merge", "css", "classnames"],
   "author": "Alan H (me@alanh.dev)",
   "license": "MIT",
   "repository": {
@@ -33,15 +27,11 @@
   "homepage": "https://github.com/seasonalmatcha/tailwind-cn",
   "devDependencies": {
     "@changesets/cli": "^2.26.2",
-    "@types/node": "^20.4.9",
+    "@types/node": "^25.0.3",
     "clsx": "^2.0.0",
-    "tailwind-merge": "^1.14.0",
-    "tsup": "^7.2.0",
+    "tailwind-merge": "^3.4.0",
+    "tsdown": "^0.18.2",
     "typescript": "^5.1.6",
-    "vitest": "^0.34.1"
-  },
-  "peerDependencies": {
-    "clsx": "^2",
-    "tailwind-merge": "^1"
+    "vitest": "^4.0.16"
   }
 }
